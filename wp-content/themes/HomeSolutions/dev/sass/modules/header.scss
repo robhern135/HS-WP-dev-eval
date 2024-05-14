@@ -1,0 +1,139 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  padding: 10px;
+  transition: 150ms linear all;
+  background: white;
+  animation-name: slideDown;
+  animation-duration: 500ms;
+  animation-delay: 0.5;
+  animation-fill-mode: forwards;
+  .header-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .branding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .logo {
+    max-width: 220px;
+    transition: 150ms linear all;
+  }
+  p.location {
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 150ms;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+    margin: 0;
+    padding: 5px;
+    &.mobile {
+      display: none;
+    }
+  }
+  &.scrolled {
+    .logo {
+      max-width: 120px;
+      transition: 150ms linear all;
+    }
+  }
+  nav#menu {
+    ul {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      list-style: none;
+      justify-content: flex-end;
+      gap: 5px;
+      margin: 0;
+      li {
+        margin: 0;
+        a {
+          @include gutterLink($black);
+        }
+      }
+    }
+  }
+  .burger {
+    display: none;
+    border: 0;
+    background: transparent;
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+@media only screen and (max-width: 1220px) {
+  .header {
+    p.location {
+      font-size: 16px;
+      span {
+        font-size: inherit;
+      }
+    }
+    nav#menu ul li a span {
+      font-size: 16px;
+    }
+  }
+}
+@media only screen and (max-width: 1130px) {
+  .header {
+    .burger {
+      display: block;
+    }
+    nav#menu {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 477px) {
+  .header {
+    .logo {
+      max-width: 150px;
+    }
+  }
+}
+@media only screen and (max-width: 475px) {
+  .header {
+    .header-inner {
+      flex-wrap: wrap;
+    }
+    p.location {
+      display: none;
+      &.mobile {
+        text-align: center;
+        display: inline;
+        width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+  }
+}

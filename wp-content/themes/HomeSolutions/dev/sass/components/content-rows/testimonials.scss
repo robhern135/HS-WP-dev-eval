@@ -1,0 +1,46 @@
+@import "./modules/variables";
+.testimonials {
+  .testimonials-inner {
+    .subtitle {
+      @extend .para;
+    }
+    .testimonial-container {
+      gap: $gap;
+    }
+    .top-title {
+      @include pill($black, $grey);
+    }
+    .left {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      .testimonial-item {
+        max-width: 350px;
+        p {
+          font-size: 14px;
+          strong,
+          b {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+    .right {
+      img,
+      source,
+      picture {
+        overflow: hidden;
+        border-radius: $br;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 570px) {
+  .testimonials .testimonials-inner .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

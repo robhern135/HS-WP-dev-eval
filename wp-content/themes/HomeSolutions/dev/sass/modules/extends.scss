@@ -1,0 +1,63 @@
+//use extend %name
+// %fs-style {
+//   .fs-wrap {
+//     width: 100%;
+//   }
+//   .fs-label-wrap {
+//     border-radius: 40px;
+//     padding: 9px 17px;
+//     min-width: 350px;
+//     background: $darkgrey;
+//     .fs-label {
+//       color: white;
+//     }
+//     .fs-arrow {
+//       right: 10px;
+//       background-image: url('data:image/svg+xml,<svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.6074 3.01367L12.4043 11.6719C12.1016 11.9746 11.7383 12.1562 11.375 12.1562C11.0723 12.1562 10.709 11.9746 10.4063 11.7324L1.20313 3.07422C0.597658 2.52929 0.597658 1.62109 1.14258 1.01562C1.6875 0.410154 2.5957 0.410154 3.20117 0.955076L11.4355 8.70508L19.6094 0.955078C20.2148 0.410156 21.123 0.410156 21.668 1.01562C22.2129 1.56055 22.2129 2.46875 21.6074 3.01367Z" fill="%23E8EDEE"/></svg>');
+//       background-repeat: no-repeat;
+//       background-size: contain;
+//       background-position: center center;
+//       border-left: 0;
+//       border-right: 0;
+//       border-top: 0;
+//       height: 14px;
+//       width: 20px;
+//       right: 20px;
+//     }
+//   }
+//   .fs-dropdown {
+//     min-width: 350px;
+//     border-radius: 40px;
+//     overflow: hidden;
+//     .fs-options {
+//       padding-bottom: 20px;
+//     }
+//     .fs-search {
+//       padding: 20px 20px 10px 20px;
+//     }
+//   }
+// }
+
+//helpers
+
+.gap-5 {
+  gap: 5px;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-30 {
+  gap: 30px;
+}
+.gap-40 {
+  gap: 40px;
+}
+.gap-50 {
+  gap: 50px;
+}
+.gap-60 {
+  gap: 60px;
+}

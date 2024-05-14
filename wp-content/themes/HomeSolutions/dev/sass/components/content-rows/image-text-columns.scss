@@ -1,0 +1,39 @@
+.image-text-columns {
+  .image-text-columns-inner {
+    gap: $gap;
+  }
+  .image-outer {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    @include responsiveImage(100%);
+    border-radius: $br;
+    transition: 150ms linear all;
+    .img-elem {
+      transition: 150ms linear all;
+    }
+  }
+  .col-title,
+  .description {
+    text-align: center;
+  }
+  .col-title {
+    font-size: 22px;
+  }
+  .column-item {
+    text-decoration: none;
+    &:hover {
+      .image-container {
+        scale: 0.94;
+        transition: 150ms linear all;
+        .img-elem {
+          scale: 1.2;
+          transition: 150ms linear all;
+        }
+      }
+    }
+  }
+}

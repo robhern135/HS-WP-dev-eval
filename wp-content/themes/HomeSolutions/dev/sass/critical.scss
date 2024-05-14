@@ -1,0 +1,128 @@
+@import "./modules/mixins";
+@import "./modules/variables";
+
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 1.2;
+  color: $black;
+  font-family: $body;
+  font-weight: 300;
+}
+body {
+  position: relative;
+  background: $white;
+}
+main {
+  padding-top: 135px;
+}
+html {
+  margin-top: 0 !important;
+  scroll-behavior: smooth;
+}
+img,
+picture,
+source {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.site-bounds {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+}
+.content-bounds {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.flex-equal {
+  flex: 1;
+}
+.content-rows {
+  position: relative;
+}
+strong,
+b,
+em,
+i {
+  font-size: inherit;
+  color: inherit;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+h1 {
+  font-size: 45px;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+p,
+li {
+  @extend .para;
+}
+.small-bounds {
+  max-width: 845px;
+  padding: 0 20px;
+  margin: 0 auto 50px auto;
+}
+.text-center {
+  text-align: center;
+}
+.button {
+  @include button($black, $white);
+}
+.bg-grey {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $grey;
+  margin-bottom: 50px;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("../../wp-content/themes/HomeSolutions/fonts/geist-sans/Geist-Regular.ttf");
+  src: url("../../wp-content/themes/HomeSolutions/fonts/geist-sans/Geist-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("../../wp-content/themes/HomeSolutions/fonts/geist-sans/Geist-Bold.ttf");
+  src: url("../../wp-content/themes/HomeSolutions/fonts/geist-sans/Geist-Bold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("../../wp-content/themes/HomeSolutions/fonts/geist-sans/Geist-Black.ttf");
+  src: url("../../wp-content/themes/HomeSolutions/fonts/geist-sans/Geist-Black.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "./modules/header";
+@import "./components/hero";

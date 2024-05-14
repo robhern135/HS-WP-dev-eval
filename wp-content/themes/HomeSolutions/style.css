@@ -1,0 +1,293 @@
+.para, .testimonials .testimonials-inner .subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.content-row {
+  margin-bottom: 50px;
+}
+
+.image-text-columns .image-text-columns-inner {
+  gap: 40px;
+}
+.image-text-columns .image-outer {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+.image-text-columns .image-container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: 18px;
+  transition: 150ms linear all;
+}
+.image-text-columns .image-container img,
+.image-text-columns .image-container picture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.image-text-columns .image-container .img-elem {
+  transition: 150ms linear all;
+}
+.image-text-columns .col-title,
+.image-text-columns .description {
+  text-align: center;
+}
+.image-text-columns .col-title {
+  font-size: 22px;
+}
+.image-text-columns .column-item {
+  text-decoration: none;
+}
+.image-text-columns .column-item:hover .image-container {
+  scale: 0.94;
+  transition: 150ms linear all;
+}
+.image-text-columns .column-item:hover .image-container .img-elem {
+  scale: 1.2;
+  transition: 150ms linear all;
+}
+
+.para, .testimonials .testimonials-inner .subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.testimonials .testimonials-inner .testimonial-container {
+  gap: 40px;
+}
+.testimonials .testimonials-inner .top-title {
+  color: #1d1d1d;
+  background: #f1f2f4;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.testimonials .testimonials-inner .left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.testimonials .testimonials-inner .left .testimonial-item {
+  max-width: 350px;
+}
+.testimonials .testimonials-inner .left .testimonial-item p {
+  font-size: 14px;
+}
+.testimonials .testimonials-inner .left .testimonial-item p strong,
+.testimonials .testimonials-inner .left .testimonial-item p b {
+  font-size: 17px;
+}
+.testimonials .testimonials-inner .right img,
+.testimonials .testimonials-inner .right source,
+.testimonials .testimonials-inner .right picture {
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+@media only screen and (max-width: 570px) {
+  .testimonials .testimonials-inner .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.content-row.gallery .item {
+  border: 0;
+  aspect-ratio: 1/1;
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: 18px;
+}
+.content-row.gallery .item img,
+.content-row.gallery .item picture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.owl-theme .owl-nav {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  margin-top: 5px;
+}
+.owl-theme .owl-nav button {
+  pointer-events: auto;
+  filter: drop-shadow(5px 5px 5px rgba(29, 29, 29, 0.5));
+}
+.owl-theme .owl-nav button.owl-prev, .owl-theme .owl-nav button.owl-next {
+  width: 40px;
+  border: 0;
+  padding: 10px !important;
+  border-radius: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: 150ms linear all;
+}
+.owl-theme .owl-nav button.owl-prev span, .owl-theme .owl-nav button.owl-next span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 150ms linear all;
+}
+.owl-theme .owl-nav button.owl-prev span svg, .owl-theme .owl-nav button.owl-next span svg {
+  width: 20px;
+  height: 20px;
+  transition: 150ms linear all;
+}
+.owl-theme .owl-nav button.owl-prev:hover, .owl-theme .owl-nav button.owl-next:hover {
+  transition: 150ms linear all;
+  background-color: #1d1d1d;
+}
+.owl-theme .owl-nav button.owl-prev:hover span, .owl-theme .owl-nav button.owl-next:hover span {
+  background: transparent !important;
+  transition: 150ms linear all;
+  background-color: #1d1d1d;
+}
+.owl-theme .owl-nav button.owl-prev:hover span svg, .owl-theme .owl-nav button.owl-next:hover span svg {
+  fill: #fff;
+  transition: 150ms linear all;
+}
+
+.bg-grey > .content-row.gallery {
+  margin-bottom: 0;
+}
+
+.modal-dialog {
+  max-width: 600px;
+  background-color: transparent;
+  border: 0;
+}
+
+.modal-content {
+  background: transparent;
+  border: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0.8;
+}
+
+.modal-body {
+  padding: 0;
+  border-radius: 18px;
+  background: transparent;
+}
+.modal-body img,
+.modal-body source,
+.modal-body picture {
+  width: 100%;
+}
+
+.modal-footer {
+  border: 0;
+  background-color: transparent;
+}
+.modal-footer p {
+  color: #fff;
+}
+.modal-footer p.modal-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 700px) {
+  .gallery-inner.content-bounds {
+    padding: 0;
+  }
+}
+.footer {
+  background: #1c242f;
+  padding: 20px 0;
+}
+.footer * {
+  color: #fff;
+}
+.footer .copyright p:last-of-type {
+  margin-bottom: 0;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 10px;
+}
+.footer ul li {
+  margin: 0;
+}
+.footer ul li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  position: relative;
+}
+.footer ul li a:before, .footer ul li a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+.footer ul li a:before {
+  top: 0px;
+  transform: translateY(-10px);
+}
+.footer ul li a:after {
+  bottom: 0px;
+  transform: translateY(10px);
+}
+.footer ul li a:hover:before, .footer ul li a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+body.single-product .product-info {
+  gap: 40px;
+}
+body.single-product .price {
+  font-size: 22px;
+  font-weight: 700;
+}
