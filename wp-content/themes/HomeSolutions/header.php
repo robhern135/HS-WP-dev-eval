@@ -5,7 +5,6 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="viewport" content="width=device-width" />
 
-
   <link href="//www.google-analytics.com" rel="dns-prefetch">
   <link rel="dns-prefetch" href="//www.google-analytics.com">
   <link rel="dns-prefetch" href="//diffuser-cdn.app-us1.com">
